@@ -1,0 +1,92 @@
+// main: ../index.scss
+// =========================================================================
+// variables
+// =========================================================================
+$main-1: #575756;
+$main-2: #171a1f;
+$main-3: #fefffa;
+$main-4: #ffffff;
+$accent-1: #a5e0df;
+$accent-2: #fc8f97;
+$font-h1: 'GothicB', sans-serif;
+$font-h2: 'Gothic', sans-serif;
+$font-h3: 'BaskVill', serif;
+$font-p: 'BaskVill', serif;
+$font-p-alt: 'Gothic', sans-serif;
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: $accent-1;
+    font-family: $font-h1;
+    // color: $main-2;
+    @media only screen and (min-width: 992px) {
+        font-size: 60px;
+    }
+}
+h2 {
+    letter-spacing: 2px;
+    font-family: $font-h1;
+    font-size: 30px;
+    text-align: center;
+    // margin-bottom: 50px;
+    padding: 40px 0px 20px 0px;
+    // box-shadow: 0px -5px 0px $accent-1 inset;
+    color: $accent-1;
+    display: block;
+    @media only screen and (min-width: 992px) {
+        font-size: 30px;
+    }
+}
+hr {
+    margin: auto;
+    margin-bottom: 40px;
+    border: 3px solid $accent-1;
+    width: 30px;
+}
+h3 {
+    letter-spacing: 2px;
+    font-family: $font-h1;
+    color: $main-1;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+h4 {
+
+}
+h5, .list, .switch-lower {
+    letter-spacing: 2px;
+    font-family: $font-h1;
+    font-size: 14px;
+    text-align: center;
+    color:$main-3;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h6 {
+    letter-spacing: 2px;
+    font-family: $font-h2;
+    font-size: 25px;
+    text-decoration: none;
+    font-style: italic;
+    box-shadow: none;
+    padding: 0px;
+    color: $main-3;
+    transition: .5s ease;
+    &:hover {
+        color: $accent-2;
+    }
+}
+p {
+    font-family: $font-p;
+    color: $main-1;
+    letter-spacing: 0.5px;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+.icon-font {
+    color: $accent-2;
+    font-size: 70px;
+
+}

@@ -1,0 +1,154 @@
+// main: ../index.scss
+// =========================================================================
+// WIMMA for-you
+// =========================================================================
+
+@import 'variables.scss';
+
+.for-you {
+    // basic styles to keep sections consistent
+    min-height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/weare.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    .container {
+        margin: 0;
+        min-width: 100%;
+        padding: 0;
+        position: relative;
+    }
+    .for-students {
+        float: left;
+        width: 50%;
+        min-height: 100vh;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        background-color: rgba($accent-1, .92);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        hr {
+            border: 3px solid $accent-2;
+        }
+    }
+    .for-employers {
+        float: right;
+        width: 50%;
+        min-height: 100vh;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        background-color: ($accent-2);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .row {
+        min-height: 340px;
+        margin-bottom: 30px;
+    }
+    h2 {
+        color: $main-3;
+    }
+    p {
+        margin: 0 60px;
+        color: $main-2;
+    }
+    hr {
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    ul {
+        margin: 30px 60px;
+        min-height: 200px;
+        .list {
+            list-style: inherit;
+            margin: 10px 0;
+            text-align: left;
+        }
+    }
+    @media (min-width: 1600px) {
+        .for-students, .for-employers {
+        padding: 150px;
+        }
+    }
+    @media (max-width: 500px) {
+         p {
+             margin: 10px;
+         }
+    }
+    @media (max-width: 768px), (orientation: portrait) {
+        .for-students {
+            float: none;
+            width: 100%;
+            height: auto;
+            min-height: 50vh;
+        }
+        .for-employers {
+            float: none;
+            width: 100%;
+            height: auto;
+            min-height: 50vh;
+        }
+        .row {
+            min-height: auto;
+        }
+        ul {
+            min-height: auto;
+            margin-bottom: 60px;
+        }
+    }
+    .for-you-btn {
+        display: block;
+        margin: auto;
+        width: 160px;
+        padding: 10px;
+        text-align: center;
+        border: solid 5px $main-3;
+        text-decoration: none;
+        color: $main-3;
+        transition: .5s ease;
+        &:hover {
+            background-color: $main-3;
+            color: $main-2;
+        }
+    }
+
+    .arrow {
+        @media (max-width: 767px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+            text-decoration: none;
+            border: solid $main-2;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transition: 0.5s ease;
+            &:hover {
+                text-decoration: none;
+                border: solid $main-1;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+        }
+    }
+}

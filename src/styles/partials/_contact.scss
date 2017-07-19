@@ -1,0 +1,82 @@
+// main: ../index.scss
+// =========================================================================
+// contact
+// =========================================================================
+
+@import 'variables.scss';
+
+.contact {
+    // basic styles to keep sections consistent
+    // min-height: 100vh;
+    padding-top: 60px;
+    .contact-container {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        text-align: center;
+        h3, p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        @media only screen and (min-width: 992px) {
+            display: flex;
+            text-align: left;
+            margin-bottom: 150px;
+        }
+        .left-side{
+            width: 290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .right-side {
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width:425px;
+            @media only screen and (min-width: 992px) {
+                margin-top: 0;
+            }
+            img {
+                width: 100%;
+                filter:grayscale(90%);
+            }
+        }
+    }
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $main-2;
+        .wimmalogo {
+            width: 200px;
+            margin-bottom: 20px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+    }
+    .social-links {
+        margin-top: 20px;
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        svg {
+            font-size: 40px; // Dat de way to fix dem buttons
+            margin: 5px;
+        }
+        a {
+            // font-size: 40px; // not a, but svg... coz a stands for "A" loser, haha hahaha heh...
+            color: $main-3;
+            transition: 0.5s;
+            &:hover {
+                color: $accent-2;
+            }
+        }
+    }
+}

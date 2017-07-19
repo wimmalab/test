@@ -1,0 +1,63 @@
+// main: ../index.scss
+// =========================================================================
+// about > who
+// =========================================================================
+
+// who ===>
+.who-content {
+    min-height: 700px;
+    padding: 20px 0;
+}
+.team-container {
+    font-size: 16px;
+}
+.team-member {
+    overflow: hidden;
+    min-height: 100px;
+    max-width: 400px;
+    box-shadow: 1px 2px 5px $main-1;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    .team-header {
+        max-height: 90px;
+        overflow: hidden;
+        padding: 15px;
+        border-bottom: 1px solid $accent-1;
+        img {
+            height: 60px;
+            border-radius: 50%;
+            display: block;
+            float: left;
+        }
+        .team-icon {
+            display: block;
+            float: right;
+            color: $main-1;
+            transition: .5s ease;
+            cursor: pointer;
+            margin-top: 10px;
+            svg {
+                font-size: 40px;
+            }
+            &:hover {
+                color: $accent-2;
+            }
+        }
+    }
+    h4 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin: 0;
+        font-family: $font-p-alt;
+        font-size: 1em;
+    }
+    .team-text {
+        padding: 15px;
+    }
+}
+.who-text {
+    display: block;
+    margin-top: 30px;
+}

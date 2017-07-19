@@ -1,0 +1,146 @@
+// main: ../index.scss
+// =========================================================================
+// companies
+// =========================================================================
+
+@import 'variables.scss';
+
+.companies {
+    // basic styles to keep sections consistent
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    @media (min-width: 768px) {
+        padding-bottom: 90px;
+    }
+    h5 {
+        color:$main-1;
+    }
+
+    //Company boxes styles
+    .companies-container {
+        margin-top: 0px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        // margin-bottom: 50px;
+
+
+        .company-icon {
+            position:relative;
+            width: 100%;
+            margin: 5px;
+            @media only screen and (min-width: 480px) {
+                width: 420px;
+            }
+            @media only screen and (min-width: 768px) {
+                width: 320px;
+            }
+            @media only screen and (min-width: 992px) {
+                width: 445px;
+            }
+            &:hover .company-overlay {
+                opacity: 0.93;
+            }
+            .company-img {
+                width: 100%;
+            }
+            .company-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: $main-1;
+            }
+            .company-text{
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                h1 {
+                    font-size: 25px;
+                    color: $accent-2;
+                }
+                p {
+                    color: $main-3;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .fade-enter {
+        opacity: 0;
+    }
+    .fade-enter-active {
+        opacity: 1;
+        transition: .5s ease-in all;
+    }
+    .arrow {
+        @media (max-width: 767px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+            text-decoration: none;
+            border: solid $main-2;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transition: 0.5s ease;
+            &:hover {
+                text-decoration: none;
+                border: solid $accent-2;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+        }
+    }
+    .arrow-up{
+        @media (max-width: 767px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            text-decoration: none;
+            border: solid $main-2;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transition: 0.5s ease;
+            &:hover {
+                text-decoration: none;
+                border: solid $accent-2;
+                transform: rotate(-135deg);
+                -webkit-transform: rotate(-135deg);
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+        }
+    }
+}

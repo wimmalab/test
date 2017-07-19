@@ -1,0 +1,31 @@
+{
+  "name": "wimmalab",
+  "version": "1.0.0",
+  "description": "New pages for wimmalab.github.io using React.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wimmalab/wimmalab.github.io.git"
+  },
+  "author": "Artur Veselovski, Maiju Shcreck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wimmalab/wimmalab.github.io/issues"
+  },
+  "homepage": "https://github.com/wimmalab/wimmalab.github.io#readme",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-icons": "^2.2.5",
+    "react-scrollable-anchor": "^0.4.2",
+    "react-waypoint": "^7.0.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.10"
+  }
+}

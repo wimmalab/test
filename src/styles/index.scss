@@ -1,0 +1,26 @@
+// =========================================================================
+// index
+// =========================================================================
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@font-face {
+    font-family: 'Gothic';
+    src: url('../fonts/GOTHIC.TTF');
+}
+@font-face {
+    font-family: 'BaskVill';
+    src: url('../fonts/BASKVILL.TTF');
+}
+@font-face {
+    font-family: 'GothicB';
+    src: url('../fonts/GOTHICB.TTF');
+}
+
+@import "partials/variables.scss";
+@import "partials/global.scss";
+@import "partials/nav.scss";
+@import "partials/landing.scss";
+@import "partials/about.scss";
+@import "partials/for-you.scss";
+@import "partials/companies.scss";
+@import "partials/contact.scss";

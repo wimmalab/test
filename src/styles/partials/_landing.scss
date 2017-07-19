@@ -1,0 +1,68 @@
+// main: ../index.scss
+// =========================================================================
+// landing
+// =========================================================================
+
+@import 'variables.scss';
+
+.landing {
+    // basic styles to keep sections consistent
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    background-image: url("../img/landingimg.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+
+/*    @media (max-width: 767px) {
+        background-image: url("../img/landingimg.jpg");
+        background-color: none;
+        video: none;
+    }
+    import Video from '../img/wimma_animaatio_pidennetty.mp4';
+    <video id="background-video" loop autoPlay>
+        <source src={Video} type="video/mp4" />
+        <source src={Video} type="video/ogg" />
+        Your browser does not support the video tag.
+    </video>
+
+
+*/
+    .container {
+        margin: 0 auto;
+    }
+    .arrow {
+        @media (max-width: 767px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+            text-decoration: none;
+            border: solid $main-3;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            transition: 0.5s ease;
+            &:hover {
+                text-decoration: none;
+                border: solid $accent-2;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 3px;
+            }
+        }
+    }
+}
