@@ -18,56 +18,54 @@ export default class Who extends React.Component {
                 <div className="team-container">
                     <div className="team-member">
                         <div className="team-header">
-                            <img src={Pasihyytiainen} alt={'Pasi Hyytiäinen'} />
-                            <span className="team-icon"><LinkedIn/></span>
+                            <img src={Narsu} alt={'narsu'} />
                         </div>
                         <div className="team-text">
-                            <h4>Pasi Hyytiäinen</h4>
-                            <p>Team Coach</p>
+                            <h4>Marko "Narsu" Rintamäki</h4>
+                            <p>Product Owner</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/narsuman/?ppe=1" target="_blank"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
                         <div className="team-header">
                             <img src={Laurimakinen} alt={'Lauri Mäkinen'} />
-                            <span className="team-icon"><LinkedIn/></span>
                         </div>
                         <div className="team-text">
                             <h4>Lauri Mäkinen</h4>
                             <p>Head Coach</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/lauri-m%C3%A4kinen-8aa6a311b/" target="_blank"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
                         <div className="team-header">
                             <img src={Paavonelimarkka} alt={'paavo-nelimarkka'} />
-                            <span className="team-icon"><LinkedIn/></span>
                         </div>
                         <div className="team-text">
                             <h4>Paavo Nelimarkka</h4>
                             <p>Team Coach</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/paavonelimarkka/?ppe=1" target="_blank"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
                         <div className="team-header">
                             <img src={Juhopekki} alt={'Juho Pekki'} />
-                            <span className="team-icon"><LinkedIn/></span>
                         </div>
                         <div className="team-text">
                             <h4>Juho Pekki</h4>
                             <p>Team Coach</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/juho-pekki-bb3801144/" target="_blank"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
                         <div className="team-header">
-                            <img src={Narsu} alt={'narsu'} />
-                            <span className="team-icon"><LinkedIn/></span>
+                            <img src={Pasihyytiainen} alt={'Pasi Hyytiäinen'} />
                         </div>
                         <div className="team-text">
-                            <h4>Marko "Narsu" Rintamäki</h4>
-                            <p>Product Owner</p>
+                            <h4>Pasi Hyytiäinen</h4>
+                            <p>Team Coach</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/pasihyytiainenfi/" target="_blank"><LinkedIn/></a></span>
                         </div>
                     </div>
-                </div>
-                <div className="who-text">
                 </div>
             </div>
         );

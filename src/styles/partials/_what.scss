@@ -18,7 +18,12 @@
         background-color: $main-2;
         padding: 30px;
         h3 {
-            color:$accent-2;
+            color:$accent-1;
+        }
+        .icon-font {
+            color: $accent-1;
+            font-size: 70px;
+
         }
         .visio {
             margin: 40px;
@@ -29,10 +34,15 @@
         .methods{
             margin: 60px;
             color: $main-3;
-            .method-icons {
+            .method-icons, h5 {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: center;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .method-icon {
+                width: 180px;
             }
         }
     }

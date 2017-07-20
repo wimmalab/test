@@ -8,9 +8,10 @@ import Who from './Who';
 import What from './What';
 import Projects from './Projects';
 // assets
-import AboutImg from '../img/landingimg.jpg';
+import AboutImg from '../img/contact.us.jpg';
 
 import Cogwheel from '../img/cogwheelicon.svg';
+import { FaCogs, FaGroup, FaQuestion } from 'react-icons/lib/fa/';
 
 
 // offset anchor for better scrolling into view
@@ -48,24 +49,27 @@ export default class About extends React.Component {
                           </p>
                        </div>
                        <div className="about-img">
-                           <img src={AboutImg} alt='about-img'/>
+                       <img src={AboutImg} alt="Borhan&Juho"></img>
                        </div>
                        <ScrollableAnchor id={'categories'}><div style={{position: 'absolute', bottom: '100px'}}></div></ScrollableAnchor>
                    </div>
                    <div className="switch-icons">
                        <a onClick={() => this.switchContent('what')} href="#categories">
-                           <div className="switch-icon whaticon">
-                               <h6 style={(this.state.content === 'what') ? {transform: styles.scaleUp, color: styles.accent2} : {} }>WHAT?</h6>
+                           <div className="switch-icon">
+                                <div className="about-icons" style={(this.state.content === 'what') ? {transform: styles.scaleUp, color: styles.accent2} : {} }><FaQuestion /></div>
+                               <h5 style={(this.state.content === 'what') ? {transform: styles.scaleUp, color: styles.accent2} : {} }>WHAT?</h5>
                            </div>
                        </a>
                        <a onClick={() => this.switchContent('who')} href="#categories">
-                           <div className="switch-icon whoicon">
-                               <h6 style={(this.state.content === 'who') ? {transform: styles.scaleUp, color: styles.accent2} : {} }>WHO?</h6>
+                           <div className="switch-icon ">
+                           <div className="about-icons" style={(this.state.content === 'who') ? {transform: styles.scaleUp, color: styles.accent2} : {} }   ><FaGroup /></div>
+                               <h5 style={(this.state.content === 'who') ? {transform: styles.scaleUp, color: styles.accent2} : {} }>WHO?</h5>
                            </div>
                        </a>
                        <a onClick={() => this.switchContent('projects')} href="#categories">
-                           <div className="switch-icon projecticon">
-                               <h6 style={(this.state.content === 'projects') ? {transform: styles.scaleUp, color: styles.accent2} : {} }>PROJECTS</h6>
+                           <div className="switch-icon ">
+                           <div className="about-icons" style={(this.state.content === 'projects') ? {transform: styles.scaleUp, color: styles.accent2} : {} }><FaCogs /></div>
+                               <h5 style={(this.state.content === 'projects') ? {transform: styles.scaleUp, color: styles.accent2} : {} }>PROJECTS</h5>
                            </div>
                        </a>
                    </div>
@@ -85,18 +89,12 @@ export default class About extends React.Component {
                        <a onClick={() => this.switchContent('who')} href="#categories" style={(this.state.content === 'who') ? {color: styles.accent2} : {}}><li>Who?</li></a>
                        <a onClick={() => this.switchContent('projects')} href="#categories" style={(this.state.content === 'projects') ? {color: styles.accent2} : {}}><li>Projects</li></a>
                    </ul>
-                   {/*
-                   <div className="latest-articles">
-                       <h3>Here latest blog posts???</h3>
-                   </div>
-                   */}
                </div>
                <span className="arrow">
-                   <a href="#for-you" style={(this.props.scrollSpy !== 'about') ? {opacity: 0, pointerEvents: 'none'} : {cursor: 'pointer'}}>
-                   <i>
-                   </i>
-               </a>
-           </span>
+                  <a href="#for-you" style={(this.props.scrollSpy !== 'about') ? {opacity: 0, pointerEvents: 'none'} : {cursor: 'pointer'}}>
+                     <i></i>
+                  </a>
+               </span>
            </section>
        );
    }
