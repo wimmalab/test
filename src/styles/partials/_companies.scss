@@ -4,8 +4,10 @@
 // =========================================================================
 
 @import 'variables.scss';
-
 .companies {
+    .container {
+        max-width: none;
+    }
     // basic styles to keep sections consistent
     min-height: 100vh;
     padding-top: 60px;
@@ -17,7 +19,7 @@
         color:$main-1;
     }
 
-    //Company boxes styles
+    // company boxes styles
     .companies-container {
         margin-top: 0px;
         display: -webkit-flex;
@@ -40,13 +42,22 @@
                 width: 320px;
             }
             @media only screen and (min-width: 992px) {
-                width: 445px;
+                width: 420px;
             }
             &:hover .company-overlay {
                 opacity: 0.93;
             }
-            .company-img {
+            .company-img, .company-overlay {
                 width: 100%;
+            @media only screen and (min-width: 480px) {
+                width: 450px;
+            }
+            @media only screen and (min-width: 768px) {
+                width: 320px;
+            }
+            @media only screen and (min-width: 992px) {
+                width: 420px;
+            }
             }
             .company-overlay {
                 position: absolute;
@@ -54,7 +65,6 @@
                 bottom: 4px;
                 left: 0;
                 right: 0;
-                width: 100%;
                 opacity: 0;
                 transition: .5s ease;
                 background-color: $main-1;
@@ -65,18 +75,22 @@
             }
             .company-text{
                 position: absolute;
+                width: 100%;
                 top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
+                // left: 50%;
+                text-align: center;
+                transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
                 h1 {
                     font-size: 25px;
                     color: $accent-2;
+                    padding: 5px;
                 }
                 p {
                     color: $main-3;
                     font-size: 20px;
                     margin: 0;
+                    padding: 5px;
                 }
             }
         }
@@ -96,52 +110,28 @@
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        a{
+            padding: 30px;
+            &:hover i {
+                text-decoration: none;
+                border: solid $accent-2;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                border-width: 0 4px 4px 0;
+                display: inline-block;
+                padding: 5px;
+            }
+        }
         i {
             text-decoration: none;
             border: solid $main-2;
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
-            border-width: 0 3px 3px 0;
+            border-width: 0 4px 4px 0;
             display: inline-block;
-            padding: 3px;
+            padding: 5px;
             transition: 0.5s ease;
-            &:hover {
-                text-decoration: none;
-                border: solid $accent-2;
-                transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
-                border-width: 0 3px 3px 0;
-                display: inline-block;
-                padding: 3px;
-            }
-        }
-    }
-    .arrow-up{
-        @media (max-width: 767px) {
-            display: none;
-        }
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        i {
-            transform: rotate(-135deg);
-            -webkit-transform: rotate(-135deg);
-            text-decoration: none;
-            border: solid $main-2;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-            transition: 0.5s ease;
-            &:hover {
-                text-decoration: none;
-                border: solid $accent-2;
-                transform: rotate(-135deg);
-                -webkit-transform: rotate(-135deg);
-                border-width: 0 3px 3px 0;
-                display: inline-block;
-                padding: 3px;
-            }
+
         }
     }
 }

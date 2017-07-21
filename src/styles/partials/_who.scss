@@ -21,10 +21,10 @@
 .team-member {
     overflow: hidden;
     width: 270px;
-    box-shadow: 1px 1px 7px $main-1;
+    // box-shadow: 1px 1px 7px $main-1;
     border-radius: 2px;
     margin: 5px;
-    background-color: $main-1;
+    background-color: $main-3;
     .team-header {
         height: 270px;
         overflow: hidden;
@@ -37,7 +37,7 @@
     .team-icon {
         cursor: pointer;
         a {
-            color: $main-3;
+            color: $main-1;
         }
         svg {
             margin-top: 15px;
@@ -48,18 +48,21 @@
             }
         }
     }
-    h4 {
-        margin-bottom: 15px;
+    h5 {
+        margin-top: 18px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: $main-1;
     }
     p {
-        color: $main-3;
+        color: $main-1;
         margin: 0;
         font-family: $font-p-alt;
-        font-size: 1em;
+        font-size: 15px;
     }
     .team-text {
         color: $main-3;
         padding: 15px;
-        text-align: center;
+        text-align: left;
     }
 }
