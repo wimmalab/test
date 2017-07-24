@@ -13,8 +13,9 @@ export default class Who extends React.Component {
     render() {
         return (
             <div className="who-content">
-                <h2>Our Team</h2>
+                <h2>Wimma Coaches</h2>
                 <hr />
+                <h5>We kickstart future talents</h5>
                 <div className="team-container">
                     <div className="team-member">
                         <div className="team-header">
@@ -23,7 +24,8 @@ export default class Who extends React.Component {
                         <div className="team-text">
                             <h5>Marko "Narsu" Rintamäki</h5>
                             <p>Product Owner</p>
-                            <span className="team-icon"><a href="https://www.linkedin.com/in/narsuman/?ppe=1" target="_blank"><LinkedIn/></a></span>
+                            <p>Narsu has set the foundations for the concept and drives the Lab.</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/narsuman/?ppe=1" target="_blank" rel="noopener noreferrer"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
@@ -33,7 +35,9 @@ export default class Who extends React.Component {
                         <div className="team-text">
                             <h5>Lauri Mäkinen</h5>
                             <p>Head Coach</p>
-                            <span className="team-icon"><a href="https://www.linkedin.com/in/lauri-m%C3%A4kinen-8aa6a311b/" target="_blank"><LinkedIn/></a></span>
+                            <p>Lauri has been a trainee and now head coach focusing on agile development and team-building.
+                            </p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/lauri-m%C3%A4kinen-8aa6a311b/" target="_blank" rel="noopener noreferrer"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
@@ -43,7 +47,8 @@ export default class Who extends React.Component {
                         <div className="team-text">
                             <h5>Paavo Nelimarkka</h5>
                             <p>Team Coach</p>
-                            <span className="team-icon"><a href="https://www.linkedin.com/in/paavonelimarkka/?ppe=1" target="_blank"><LinkedIn/></a></span>
+                            <p>Paavo is a former trainee and now lecturer at JAMK specialized in game-development.</p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/paavonelimarkka/?ppe=1" target="_blank" rel="noopener noreferrer"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
@@ -53,7 +58,9 @@ export default class Who extends React.Component {
                         <div className="team-text">
                             <h5>Juho Pekki</h5>
                             <p>Team Coach</p>
-                            <span className="team-icon"><a href="https://www.linkedin.com/in/juho-pekki-bb3801144/" target="_blank"><LinkedIn/></a></span>
+                            <p>Juho is bringing technical superpowers to the coaching team. Juho is fluent in container technologies and test automation.
+                            </p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/juho-pekki-bb3801144/" target="_blank" rel="noopener noreferrer"><LinkedIn/></a></span>
                         </div>
                     </div>
                     <div className="team-member">
@@ -63,7 +70,9 @@ export default class Who extends React.Component {
                         <div className="team-text">
                             <h5>Pasi Hyytiäinen</h5>
                             <p>Team Coach</p>
-                            <span className="team-icon"><a href="https://www.linkedin.com/in/pasihyytiainenfi/" target="_blank"><LinkedIn/></a></span>
+                            <p>Pasi has seen the good and the bad of software development and helps students with his decades of experience.
+                            </p>
+                            <span className="team-icon"><a href="https://www.linkedin.com/in/pasihyytiainenfi/" target="_blank" rel="noopener noreferrer"><LinkedIn/></a></span>
                         </div>
                     </div>
                 </div>

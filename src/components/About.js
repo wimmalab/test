@@ -9,16 +9,13 @@ import What from './What';
 import Projects from './Projects';
 // assets
 import AboutImg from '../img/contact.us.jpg';
-
-import Cogwheel from '../img/cogwheelicon.svg';
 import { FaCogs, FaGroup, FaQuestion } from 'react-icons/lib/fa/';
-
 
 // offset anchor for better scrolling into view
 configureAnchors({offset: -40});
 // for inline styling
 const styles = {
-    accent2: '#fc8f97',
+    accent2: '#E47A5D',
     scaleUp: 'scale(1.2)'
 }
 
@@ -45,7 +42,7 @@ export default class About extends React.Component {
                            <h3>OUR STORY</h3>
                            <p>
                            WIMMA Lab runs as a 2,5-month project, which students participate as trainees.
-                           During the project, students form "virtual company" teams and solve challenges. Challenges are given by companies, research programs and universities. Students develop proof-of-concepts and even production ready solutions.
+                           During the project, students form Virtual Companies to solve challenges. Challenges are given by companies, research programs or Universities. Students develop proof-of-concepts or even production-ready solutions.
                           </p>
                        </div>
                        <div className="about-img">

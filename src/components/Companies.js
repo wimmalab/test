@@ -1,6 +1,5 @@
 // libs
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // assets
 import PengWinM from '../img/companies/media-hero.png';
 import Overflow from '../img/companies/overflow-hero.png';
@@ -23,7 +22,7 @@ export default class Companies extends React.Component {
                             <div className="company-overlay">
                                 <div className="company-text">
                                     <h1>PengWin Media</h1>
-                                    <p>Web-Design | Graphics | Web-Development</p>
+                                    <p>Web-Design | Graphics | Web-Development | Video editing | UX-Design | Social Media</p>
                                 </div>
                             </div>
                         </a>
@@ -45,7 +44,7 @@ export default class Companies extends React.Component {
                                 <div className="company-overlay">
                                     <div className="company-text">
                                         <h1>Mysticons</h1>
-                                        <p>Data-analyzers | Iot-Scouts | AI-Scouts</p>
+                                        <p>Data-analyzing | Iot-Scouts | AI-Scouts</p>
                                     </div>
                                 </div>
                             </a>
@@ -56,7 +55,7 @@ export default class Companies extends React.Component {
                                 <div className="company-overlay">
                                     <div className="company-text">
                                         <h1>Iotitude</h1>
-                                        <p>Iot-products</p>
+                                        <p>IOT sevice product</p>
                                     </div>
                                 </div>
                             </a>

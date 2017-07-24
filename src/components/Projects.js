@@ -23,12 +23,10 @@ export default class Projects extends React.Component {
                 <div className="projects-wrapper">
                 <div className="projects">
                     <div className="project projects-year">
-                        <a href="#">
-                            <h3>2017 - WIMMA Lab</h3>
-                        </a>
+                        <h3>2017 - WIMMA Lab</h3>
                     </div>
                     <div className="project">
-                        <a href="#">
+                        <a href="https://wimmalab.github.io/overflow" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Overflow} alt="Overflow"/>
                             </div>
@@ -39,7 +37,7 @@ export default class Projects extends React.Component {
                         </a>
                     </div>
                     <div className="project">
-                        <a href="https://iotitude.gitlab.io" target="_blank">
+                        <a href="https://wimmalab.github.io/iotitude" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={IoTitude} alt="IoTitude"/>
                             </div>
@@ -51,31 +49,31 @@ export default class Projects extends React.Component {
                         </a>
                     </div>
                     <div className="project">
-                        <a href="#">
+                        <a href="https://wimmalab.github.io/pengwingame" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={PengWinGame} alt="PengWinGame"/>
                             </div>
                             <div className ="projects-text">
                                 <h5>PengWin Game</h5>
-                                <p>#wine #game #mobile #unity #pixelart
+                                <p>Products pixelart mobilegame for hospitality students with Unity gamemotor.
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div className="project">
-                        <a href="#">
+                        <a href="https://wimmalab.github.io/pengwinmedia" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={PengWinMedia} alt="PengWinMedia"/>
                             </div>
                             <div className ="projects-text">
                                 <h5>PengWin Media</h5>
-                                <p>Media production, web-design solutions, graphics and more.
+                                <p>Provides Media production, Web-Design solutions, Graphic-Design, Video producions and UX-Design consulting for Wimma Lab brand and Virtual Companies.
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div className="project">
-                        <a href="#">
+                        <a href="https://wimmalab.github.io/mysticons" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={MystiCons} alt="MystiCons"/>
                             </div>
@@ -88,12 +86,12 @@ export default class Projects extends React.Component {
                     </div>
                     {/* 2016 ==> */}
                     <div className="project projects-year">
-                        <a href="https://n4sjamk.github.io/challenge-factory-2016.html">
+                        <a href="https://n4sjamk.github.io/challenge-factory-2016.html" target="_blank" rel="noopener noreferrer">
                             <h3>2016 - Challenge Factory</h3>
                         </a>
                     </div>
                     <div className="project">
-                        <a href="http://kumos.github.io/" target="_blank">
+                        <a href="http://kumos.github.io/" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Kumos} alt="Kumos"/>
                             </div>
@@ -105,7 +103,7 @@ export default class Projects extends React.Component {
                         </a>
                     </div>
                     <div className="project">
-                        <a href="https://overflowjamk.github.io/" target="_blank">
+                        <a href="https://overflowjamk.github.io/" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Overflow} alt="Overflow"/>
                             </div>
@@ -117,7 +115,7 @@ export default class Projects extends React.Component {
                         </a>
                     </div>
                     <div className="project">
-                        <a href="https://iotitude.github.io/" target="_blank">
+                        <a href="https://iotitude.github.io/" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={IoTitude} alt="IoTitude"/>
                             </div>
@@ -130,12 +128,12 @@ export default class Projects extends React.Component {
                     </div>
                     {/* 2015 ==> */}
                     <div className="project projects-year">
-                        <a href="https://n4sjamk.github.io/challenge-factory-2015.html">
+                        <a href="https://n4sjamk.github.io/challenge-factory-2015.html" target="_blank" rel="noopener noreferrer">
                             <h3>2015 - Challenge Factory</h3>
                         </a>
                     </div>
                     <div className="project">
-                        <a href="http://n4sjamk.github.io/contriboard/" target="_blank">
+                        <a href="http://n4sjamk.github.io/contriboard/" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Contriboard} alt="contriboard"/>
                             </div>
@@ -147,23 +145,24 @@ export default class Projects extends React.Component {
                         </a>
                     </div>
                     <div className="project">
-                        <a href="https://n4sjamk.github.io/jarmo/" target="_blank">
+                        <a href="https://n4sjamk.github.io/jarmo/" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Jarmo} alt="Jarmo"/>
                             </div>
                             <div className ="projects-text">
-                                <h5>Jarmo</h5>
+                                <h5>Jarmo - Application Monitoring System</h5>
                                 <p>A simple system for application health monitoring.
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div className="project">
-                        <a href="https://n4sjamk.github.io/challenge-factory-2015.html" target="_blank">
+                        <a href="https://n4sjamk.github.io/challenge-factory-2015.html" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Noise} alt="Noise"/>
                             </div>
                             <div className ="projects-text">
+                            <h5>Noise Generator</h5>
                                 <p>Simulate different network conditions
                                 </p>
                             </div>
@@ -171,16 +170,17 @@ export default class Projects extends React.Component {
                     </div>
                     {/* 2014 ==> */}
                     <div className="project projects-year">
-                        <a href="https://n4sjamk.github.io/challenge-factory-2014.html">
+                        <a href="https://n4sjamk.github.io/challenge-factory-2014.html" target="_blank" rel="noopener noreferrer">
                             <h3>2014 - Summer Factory </h3>
                         </a>
                     </div>
                     <div className="project">
-                        <a href="https://n4sjamk.github.io/challenge-factory-2014.html" target="_blank">
+                        <a href="https://n4sjamk.github.io/challenge-factory-2014.html" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Toolbar} alt="Toolbar"/>
                             </div>
                             <div className ="projects-text">
+                            <h5>Toolbar</h5>
                                 <p>Collect and share sites and tools your team needs speeding up the working environment setup process.
                                 </p>
                             </div>
@@ -191,7 +191,7 @@ export default class Projects extends React.Component {
                         <h3>2012 & 2013 - Summer Factory</h3>
                     </div>
                     <div className="project">
-                        <a href="http://freenest.org/about" target="_blank">
+                        <a href="http://freenest.org/about" target="_blank" rel="noopener noreferrer">
                             <div className="icon">
                                 <img src={Freenest} alt="Freenest"/>
                             </div>
